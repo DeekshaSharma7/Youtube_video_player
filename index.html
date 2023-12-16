@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A YouTube video player that allows you to play multiple videos simultaneously. Developed by Harshitethic">
+    <meta property="og:image" content="screenshot.png">
+    <script src="https://www.youtube.com/player_api"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>YouTube Video Player</h1>
+    </div>
+
+    <div class="container">
+        <div id="card-container">
+            <div class="card">
+                <form method="post" id="play-form">
+                    <label for="youtube_url">YouTube URL:</label>
+                    <br>
+                    <input type="text" name="youtube_url" id="youtube_url" required>
+                    <br><br>
+                    <label for="play_count">Number of Plays:</label>
+                    <br>
+                    <input type="number" name="play_count" id="play_count" min="1" required>
+                    <br><br>
+                    <label for="loop_count">Number of Loops:</label>
+                    <br>
+                    <input type="number" name="loop_count" id="loop_count" min="1" required>
+                    <br><br>
+                    <input type="submit" value="Play" class="play-button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="player"></div>
+
+    <footer class="dark-mode">
+        Developed by Deeksha Sharma <!--<a href="http://127.0.0.1:5500/" target="_blank" style="color: inherit;">Deeksha Sharma</a>-->
+    </footer>
+  </body>
+</html>
